@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="css/estilo.css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light " id="navbar-nav2">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/Pikachu.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        POKEMON
+      </a>
+    </nav>
+    <div class="container fluid">
+      <div class="row" style="padding:30px;">
+        <div class="col-md-12">
+          <h2 class="text-center">Crea tu cuenta Pokemon </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <p>Cualquier texto.</p>
+        </div>
+
+        <div class="col-md-6" >
+          <div class="row " >
+            <p>Esperese señor</p>
+            <div class="progress" style="height: 1px;" id="barraProgreso">
+              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <form id="action" class="" action="./php/registro.php" method="post">
+            <div class="form-group">
+              <label for="Alias" >Nickname</label>
+              <input type="text" name="nickName" value="" class="form-control">
+              <label for="Nombre" >Nombre</label>
+              <input type="text" name="Nombre" value="" class="form-control">
+              <label for="Contraseña" >Contraseña</label>
+              <input type="password" name="Contraseña" value="" class="form-control">
+              <label for="Contraseña2" >Repetir Contraseña</label>
+              <input type="password" name="Contraseña2" value="" class="form-control">
+              <label for="Genero">Genero</label>
+                <select id="Genero" name="Genero" class="form-control">
+                   <option selected>Selecciona tu genero</option>
+                   <option >Femenino</option>
+                   <option>Masculino</option>
+                   <option>Otro</option>
+                </select>
+              <div class="trans text-center" style="padding:8px">
+                <button type="submit" class="btn btn-warning" name="button">Registrarse</button>
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" ></script>
+    <script src="./js/bootstrap.min.js" ></script>
+  </body>
+</html>
